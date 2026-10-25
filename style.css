@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&family=Playfair+Display:wght@600;700&display=swap');
+:root{--pink:#e96d91;--deep:#9e4267;--cream:#fff8f5;--ink:#573746;--rose:#ffdce7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+.topbar{height:56px;display:flex;align-items:center;justify-content:center;gap:14px;background:#fff1f5;border-bottom:1px solid #f7d4e0;letter-spacing:.08em;font-size:.8rem;color:#9e4267;position:relative;z-index:2}
+.nav-heart{font-size:1.3rem;animation:beat 1.2s infinite}
+.hero{min-height:88vh;position:relative;overflow:hidden;text-align:center;padding:95px 20px 55px;background:radial-gradient(circle at 15% 20%,#fff 0 3px,transparent 4px),radial-gradient(circle at 85% 35%,#fff 0 4px,transparent 5px),linear-gradient(145deg,#fff4f5,#ffe1e9 55%,#fff2e6)}
+.hero:before,.hero:after{content:'✿';position:absolute;font-size:clamp(100px,20vw,230px);color:#f5b9ca;opacity:.35;animation:float 6s ease-in-out infinite}
+.hero:before{left:-35px;top:8%}.hero:after{right:-30px;bottom:3%;animation-delay:-3s}
+.eyebrow,.section-tag{font-size:.76rem;font-weight:700;letter-spacing:.2em;color:var(--deep)}
+h1{font-family:'Playfair Display',serif;font-size:clamp(3.4rem,9vw,7.4rem);line-height:.98;margin:25px 0 18px;color:#78405a;position:relative;z-index:1}
+h1 span{font-family:'Pacifico',cursive;font-weight:400;color:var(--pink);text-shadow:3px 4px 0 #fff}
+.subtitle{font-size:clamp(1rem,2.4vw,1.25rem);margin:0 auto 25px;max-width:600px}
+.main-btn{border:0;border-radius:999px;padding:15px 25px;background:linear-gradient(135deg,#f18aa8,#d95783);color:white;font-size:1rem;font-weight:700;box-shadow:0 10px 25px #d957833d;cursor:pointer;transition:transform .2s,box-shadow .2s;position:relative;z-index:1}
+.main-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 14px 30px #d9578355}
+.scroll-note{font-size:.8rem;opacity:.65;margin-top:48px}
+.floating-hearts{display:flex;justify-content:center;gap:25px;margin:28px 0;font-size:1.7rem}
+.floating-hearts span{animation:float 3s ease-in-out infinite}.floating-hearts span:nth-child(2){animation-delay:.4s}.floating-hearts span:nth-child(3){animation-delay:.8s}.floating-hearts span:nth-child(4){animation-delay:1.2s}.floating-hearts span:nth-child(5){animation-delay:1.6s}
+.section{padding:80px 20px;text-align:center}
+h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.3rem);margin:14px 0;color:#78405a}
+.intro{max-width:650px;margin:0 auto 32px;line-height:1.8;color:#825f70}
+.memory{background:#fffaf8}
+.photo-frame{width:min(370px,88vw);margin:35px auto 0;background:white;padding:14px 14px 22px;box-shadow:0 18px 50px #9e42671c;transform:rotate(-2deg);position:relative;border-radius:4px;transition:transform .4s}
+.photo-frame:hover{transform:rotate(0) scale(1.02)}
+.tape{position:absolute;width:100px;height:28px;background:#f8b7c8b8;top:-12px;left:calc(50% - 50px);transform:rotate(4deg);z-index:1}
+.portrait{display:block;width:100%;max-height:470px;object-fit:cover;border-radius:2px}
+.photo-caption{font-family:'Pacifico',cursive;font-size:1.15rem;color:#b44f75;padding-top:15px}
+.wishes{background:linear-gradient(180deg,#fff0f4,#fff8f5)}
+.letter{max-width:700px;margin:30px auto 0;padding:clamp(25px,5vw,50px);background:#fffdfb;border:1px solid #f8d9e3;border-radius:18px;box-shadow:0 15px 45px #a94f7012;text-align:left;line-height:1.9;font-size:1.05rem;position:relative}
+.letter:before{content:'♡';position:absolute;right:22px;top:8px;font-size:3rem;color:#f5b6ca}
+.signature{font-family:'Pacifico',cursive;color:#b44f75;text-align:right;margin-top:25px}
+.poster-section{background:#fffaf8}
+.poster{display:block;width:min(620px,94%);max-height:850px;object-fit:contain;margin:28px auto 0;border-radius:12px;box-shadow:0 20px 55px #9e426726}
+.finale{background:linear-gradient(135deg,#ffe4ec,#fff3e8);padding-bottom:90px}
+.cake{font-size:4rem;animation:float 3s ease-in-out infinite}
+.finale p{max-width:550px;margin:0 auto 28px;line-height:1.8}
+.final-love{margin-top:30px;font-family:'Pacifico',cursive;color:#a84f72;font-size:1.2rem}
+footer{text-align:center;padding:25px 15px;background:#fff1f5;font-size:.85rem;color:#9e4267}
+.modal{position:fixed;inset:0;background:#4a253bb8;display:none;place-items:center;padding:20px;z-index:10}
+.modal.show{display:grid;animation:fadeIn .25s}
+.modal-card{background:#fff8f5;border-radius:24px;padding:38px 25px;max-width:460px;width:100%;text-align:center;position:relative;box-shadow:0 20px 70px #31132344;animation:pop .4s}
+.modal-card p{line-height:1.7}.modal-gift{font-size:3rem}.close{position:absolute;right:15px;top:10px;border:0;background:none;font-size:2rem;color:#9e4267;cursor:pointer}
+.confetti{position:fixed;top:-20px;z-index:20;pointer-events:none;font-size:20px;animation:fall linear forwards}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(4deg)}}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:.2}}
+@media(max-width:600px){.hero{min-height:82vh;padding-top:78px}.section{padding:62px 17px}.floating-hearts{gap:15px}.letter{font-size:1rem}.topbar{font-size:.68rem}}
